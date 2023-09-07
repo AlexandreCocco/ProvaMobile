@@ -8,5 +8,4 @@
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".ListActivity">
-
 </androidx.constraintlayout.widget.ConstraintLayout>
