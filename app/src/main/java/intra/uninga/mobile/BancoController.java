@@ -2,6 +2,7 @@ package intra.uninga.mobile;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 public class BancoController {
@@ -31,5 +32,18 @@ public class BancoController {
         else
             return "Registro Inserido com sucesso";
 
+    }
+
+    public Cursor carregaDados(){
+        Cursor cursor;
+        String[] campos =  {banco.ID,banco.TITULO};
+        db = banco.getReadableDatabase();
+        cursor = db.query(banco.TABELA, campos, null, null, null, null, null, null);
+
+        if(cursor!=null){
+            cursor.moveToFirst();
+        }
+        db.close();
+        return cursor;
     }
 }

@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 public class CriaBanco extends SQLiteOpenHelper {
     private static final String NOME_BANCO = "banco.db";
     static final String TABELA = "livros";
-    private static final String ID = "_id";
+    static final String ID = "_id";
     static final String TITULO = "titulo";
     static final String AUTOR = "autor";
     static final String EDITORA = "editora";
