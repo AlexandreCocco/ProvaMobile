@@ -13,7 +13,7 @@ public class BancoController {
         banco = new CriaBanco(context);
     }
 
-    public String Formulario(String titulo, String autor, String editora){
+    public String FormActivity(String titulo, String autor, String editora){
         ContentValues valores;
         long resultado;
 
