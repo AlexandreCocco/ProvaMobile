@@ -46,4 +46,18 @@ public class BancoController {
         db.close();
         return cursor;
     }
+
+    public Cursor carregaDadoById(int id){
+        Cursor cursor;
+        String[] campos =  {banco.ID,banco.TITULO,banco.AUTOR,banco.EDITORA};
+        String where = CriaBanco.ID + "=" + id;
+        db = banco.getReadableDatabase();
+        cursor = db.query(CriaBanco.TABELA,campos,where, null, null, null, null, null);
+
+        if(cursor!=null){
+            cursor.moveToFirst();
+        }
+        db.close();
+        return cursor;
+    }
 }
