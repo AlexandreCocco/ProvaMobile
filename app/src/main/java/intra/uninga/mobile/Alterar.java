@@ -50,5 +50,16 @@ public class Alterar extends MainActivity {
                 finish();
             }
         });
+
+        deletar = (Button)findViewById(R.id.button3);
+        deletar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                crud.deletaRegistro(Integer.parseInt(codigo));
+                Intent intent = new Intent(Alterar.this,ListActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }
