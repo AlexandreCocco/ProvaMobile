@@ -39,5 +39,16 @@ public class Alterar extends MainActivity {
         autor.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.AUTOR)));
         editora.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.EDITORA)));
 
+        alterar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                crud.alteraRegistro(Integer.parseInt(codigo),
+                        livro.getText().toString(),autor.getText().toString(),
+                        editora.getText().toString());
+                Intent intent = new Intent(Alterar.this,ListActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }
