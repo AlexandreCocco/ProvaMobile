@@ -15,39 +15,50 @@
 
         <Button
             android:id="@+id/formButton"
-            android:layout_width="150dp"
-            android:layout_height="62dp"
-            android:backgroundTint="#000000"
+            android:layout_width="239dp"
+            android:layout_height="73dp"
+            android:backgroundTint="#5DC6FF"
+            android:fontFamily="@font/itim"
             android:text="Formulário"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:cornerRadius="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.393" />
+            app:layout_constraintVertical_bias="0.402" />
 
         <Button
             android:id="@+id/listButton"
-            android:layout_width="150dp"
-            android:layout_height="62dp"
-            android:backgroundTint="#000000"
+            android:layout_width="208dp"
+            android:layout_height="78dp"
+            android:backgroundTint="#5DC6FF"
+            android:fontFamily="@font/itim"
             android:text="Lista"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:cornerRadius="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.519" />
+            app:layout_constraintVertical_bias="0.587" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/itim"
             android:text="Selecionando um Opção"
+            android:textSize="25sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.298" />
+            app:layout_constraintVertical_bias="0.247" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
