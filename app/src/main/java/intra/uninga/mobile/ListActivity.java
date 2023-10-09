@@ -9,7 +9,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
-
 public class ListActivity extends Activity {
     private ListView lista;
     @Override

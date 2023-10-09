@@ -9,56 +9,78 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/itim"
+        android:text="Selecionando um Opção"
+        android:textSize="25sp" />
 
-        <Button
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+
+    <Button
             android:id="@+id/formButton"
-            android:layout_width="239dp"
-            android:layout_height="73dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
             android:backgroundTint="#5DC6FF"
             android:fontFamily="@font/itim"
             android:text="Formulário"
             android:textColor="#000000"
             android:textSize="30sp"
             android:textStyle="bold"
-            app:cornerRadius="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.402" />
+            app:cornerRadius="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
 
         <Button
             android:id="@+id/listButton"
-            android:layout_width="208dp"
-            android:layout_height="78dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
             android:backgroundTint="#5DC6FF"
             android:fontFamily="@font/itim"
             android:text="Lista"
             android:textColor="#000000"
             android:textSize="30sp"
             android:textStyle="bold"
-            app:cornerRadius="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.587" />
+            app:cornerRadius="20sp" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <Button
+            android:id="@+id/CadastroB"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:backgroundTint="#5DC6FF"
             android:fontFamily="@font/itim"
-            android:text="Selecionando um Opção"
-            android:textSize="25sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.247" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:text="Cadastro de Pastas"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:cornerRadius="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+    <Button
+        android:id="@+id/ContPasta"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5DC6FF"
+        android:fontFamily="@font/itim"
+        android:text="Conteúdo em Pasta"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:cornerRadius="20sp" />
+
 </LinearLayout>

@@ -9,8 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button formButton;
-    private Button listButton;
+    private Button formButton, listButton, CadPast, ContPast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
         formButton = findViewById(R.id.formButton);
         listButton = findViewById(R.id.listButton);
+        CadPast = findViewById(R.id.CadastroB);
+        ContPast = findViewById(R.id.ContPasta);
 
         formButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
                 openListActivity();
             }
         });
+
+        CadPast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openCadastroPasta();
+            }
+        }); {
+
+        }
     }
 
     private void openFormActivity() {
@@ -43,5 +53,10 @@ public class MainActivity extends AppCompatActivity {
     private void openListActivity() {
         Intent intent = new Intent(this, ListActivity.class);
         startActivity(intent);
+    }
+
+    private void openCadastroPasta() {
+        Intent cado = new Intent(this, CadastroPasta.class);
+        startActivity(cado);
     }
 }
