@@ -16,6 +16,7 @@ public class CriaBanco extends SQLiteOpenHelper {
     static final String TITULO = "titulo";
     static final String AUTOR = "autor";
     static final String EDITORA = "editora";
+    static final String PASTA = "pasta";
     private static final int VERSAO = 1;
 
     public CriaBanco(Context context){
@@ -29,7 +30,7 @@ public class CriaBanco extends SQLiteOpenHelper {
                 + TITULO + " text,"
                 + AUTOR + " text,"
                 + EDITORA + " text"
-                +")";
+                + PASTA + "text" +")";
         db.execSQL(sql);
     }
 

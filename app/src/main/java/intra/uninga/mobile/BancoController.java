@@ -14,6 +14,22 @@ public class BancoController {
         banco = new CriaBanco(context);
     }
 
+    public String CadastroPasta(String pasta){
+        ContentValues valor;
+        long result;
+        SQLiteDatabase bd = banco.getWritableDatabase();
+        valor = new ContentValues();
+        valor.put(CriaBanco.PASTA, pasta);
+        result = bd.insert(CriaBanco.PASTA, null, valor);
+        bd.close();
+
+        if (result ==-1)
+            return "Erro!!!!";
+        else
+            return "Sucesso";
+
+    }
+
     public String FormActivity(String titulo, String autor, String editora){
         ContentValues valores;
         long resultado;
